@@ -4,7 +4,7 @@ const app = express();
 
 const sampleEmployee = {
 	name: {
-		first: "Charlie",
+		first: "ChAAAAAAAAAAAAAAAAAlie",
 		last: "Thompson",
 	},
 	email: "charlie.thompson@example.com",
@@ -12,7 +12,7 @@ const sampleEmployee = {
 		medium: "https://randomuser.me/api/portraits/med/men/40.jpg",
 	},
 };
-app.use(cors({ origin: ["http://localhost:5173"] }));
+app.use(cors({ origin: ["http://localhost:5174"] }));
 app.get("/api/employees", (req, res) => {
 	res.json({ result: [sampleEmployee] });
 });
